@@ -1,7 +1,14 @@
+body{
+    font-family: 'Poppins';
+    
+    
+}
+
+
 .footer-inp{
     width: 369px;
     padding: 11px 117px 10px 14px;
-    border-radius: 12px 0px;
+    border-radius: 10px ;
 background: #FFF;
 }
 .footer-btn{
@@ -9,7 +16,7 @@ background: #FFF;
     padding: 11px 14px 10px 14px;
     justify-content: center;
     align-items: center;
-    border-radius: 12px 0px;
+    border-radius: 10px ;
 background: #699FC9;
 }
 

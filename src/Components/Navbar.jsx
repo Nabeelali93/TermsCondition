@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import "../app.css"
 
 
+function Navbar(props) {
 
-function Navbar() {
 
+  console.log(props)
 
 
 
@@ -18,7 +20,7 @@ function Navbar() {
         <div class="text-gray-600   ">
            <div class="w-full mx-auto flex bg-[#699FC9] fixed top-0 left-0 flex-wrap  p-5 flex-col md:flex-row items-center">
               <a class="flex title-font font-medium items-center text-gray-900 md:mb-0">
-                <button >
+                <button onClick={()=>props.togle()} >
                   <svg
                     width="27"
                     height="27"
@@ -35,7 +37,7 @@ function Navbar() {
 <Link to="/">
                 <span
                   id="logo"
-                  class="ml-3 px-3 text-xl font-bold text-white mb-1  cursor-pointer"
+                  class="ml-3 px-3 text-2xl font-bold text-white mb-1  cursor-pointer"
                  
                 >
                   Saer.<span className="text-sm">pk</span>
