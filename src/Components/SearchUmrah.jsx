@@ -9,7 +9,7 @@ import plus from "../assests/plus.png";
 import minus from "../assests/minus.png";
 import madina from "../assests/buttonIcons/madina.png";
 import mecca from "../assests/buttonIcons/mecca.png";
-
+import "../app.css"
 
 
 function SearchUmrah() {
@@ -48,43 +48,18 @@ function SearchUmrah() {
             </span>
           </h1>
          </div>
-
+       
           {/* Button Section Start */}
 
        
-            <div class="container flex flex-col   py-3 mx-auto ">
+  
 
-              
-              <div class="flex  justify-around md:flex-row flex-col   		">
-
-
-                  <div class="md:h-[60px] md:w-[215px] h-16 w-60 flex items-center  md:my-0 my-3    bg-white rounded-lg ">
-                    <div className="     mr-5 ">
-                    <svg width="48" height="37" viewBox="0 0 48 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="calendar-date-schedule-svgrepo-com 1">
-<g id="SVGRepo_iconCarrier">
-<g id="Group">
-<path id="Vector" d="M18.2181 16.5732H15.0629C14.795 16.5732 14.5781 16.7403 14.5781 16.9469V19.379C14.5781 19.5853 14.795 19.7527 15.0629 19.7527H18.2181C18.4861 19.7527 18.7029 19.5853 18.7029 19.379V16.9469C18.7029 16.7406 18.4861 16.5732 18.2181 16.5732ZM17.7333 19.0053H15.5478V17.3206H17.7333V19.0053Z" fill="#699FC9" stroke="#699FC9" stroke-width="0.00159473"/>
-<path id="Vector_2" d="M25.5769 16.5732H22.4217C22.1538 16.5732 21.9369 16.7403 21.9369 16.9469V19.379C21.9369 19.5853 22.1538 19.7527 22.4217 19.7527H25.5769C25.8445 19.7527 26.0617 19.5853 26.0617 19.379V16.9469C26.0617 16.7406 25.8445 16.5732 25.5769 16.5732ZM25.0921 19.0053H22.9065V17.3206H25.0921V19.0053Z" fill="#699FC9" stroke="#699FC9" stroke-width="0.00159473"/>
-<path id="Vector_3" d="M32.7088 16.5732H29.5537C29.286 16.5732 29.0688 16.7403 29.0688 16.9469V19.379C29.0688 19.5853 29.286 19.7527 29.5537 19.7527H32.7088C32.9765 19.7527 33.1937 19.5853 33.1937 19.379V16.9469C33.1937 16.7406 32.9765 16.5732 32.7088 16.5732ZM32.224 19.0053H30.0385V17.3206H32.224V19.0053Z" fill="#699FC9" stroke="#699FC9" stroke-width="0.00159473"/>
-<path id="Vector_4" d="M18.2181 22.1131H15.0629C14.795 22.1131 14.5781 22.2805 14.5781 22.4868V24.9189C14.5781 25.1252 14.795 25.2926 15.0629 25.2926H18.2181C18.4861 25.2926 18.7029 25.1252 18.7029 24.9189V22.4868C18.7029 22.2805 18.4861 22.1131 18.2181 22.1131ZM17.7333 24.5452H15.5478V22.8605H17.7333V24.5452Z" fill="#699FC9" stroke="#699FC9" stroke-width="0.00159473"/>
-<path id="Vector_5" d="M25.5769 22.1131H22.4217C22.1538 22.1131 21.9369 22.2805 21.9369 22.4868V24.9189C21.9369 25.1252 22.1538 25.2926 22.4217 25.2926H25.5769C25.8445 25.2926 26.0617 25.1252 26.0617 24.9189V22.4868C26.0617 22.2805 25.8445 22.1131 25.5769 22.1131ZM25.0921 24.5452H22.9065V22.8605H25.0921V24.5452Z" fill="#699FC9" stroke="#699FC9" stroke-width="0.00159473"/>
-<path id="Vector_6" d="M32.7088 22.1131H29.5537C29.286 22.1131 29.0688 22.2805 29.0688 22.4868V24.9189C29.0688 25.1252 29.286 25.2926 29.5537 25.2926H32.7088C32.9765 25.2926 33.1937 25.1252 33.1937 24.9189V22.4868C33.1937 22.2805 32.9765 22.1131 32.7088 22.1131ZM32.224 24.5452H30.0385V22.8605H32.224V24.5452Z" fill="#699FC9" stroke="#699FC9" stroke-width="0.00159473"/>
-<path id="Vector_7" d="M36.5486 9.33633H33.3466C33.3424 9.33633 33.3388 9.33708 33.3346 9.33733V8.83954C33.3346 8.02535 32.4755 7.36313 31.4193 7.36313C30.363 7.36313 29.504 8.0256 29.504 8.83954V9.33633H25.896V8.83954C25.896 8.02535 25.0369 7.36313 23.9806 7.36313C22.9244 7.36313 22.0653 8.0256 22.0653 8.83954V9.33633H18.4569V8.83954C18.4569 8.02535 17.5978 7.36313 16.5416 7.36313C15.4853 7.36313 14.6262 8.0256 14.6262 8.83954V9.33658C14.6246 9.33658 14.623 9.33633 14.6214 9.33633H11.42C11.1521 9.33633 10.9352 9.5035 10.9352 9.71004V29.0798C10.9352 29.2861 11.1521 29.4535 11.42 29.4535H36.5486C36.8163 29.4535 37.0335 29.2861 37.0335 29.0798V9.71004C37.0335 9.5035 36.8163 9.33633 36.5486 9.33633ZM30.4736 8.83954C30.4736 8.43743 30.8976 8.11055 31.4193 8.11055C31.941 8.11055 32.365 8.43743 32.365 8.83954V10.9017C32.365 11.3036 31.941 11.6307 31.4193 11.6307C30.8976 11.6307 30.4736 11.3038 30.4736 10.9017V8.83954ZM23.9806 8.11055C24.5019 8.11055 24.9263 8.43743 24.9263 8.83954V10.9017C24.9263 11.3036 24.5023 11.6307 23.9806 11.6307C23.4589 11.6307 23.0349 11.3038 23.0349 10.9017V9.74492C23.0362 9.73321 23.0394 9.722 23.0394 9.70979C23.0394 9.69758 23.0362 9.68637 23.0349 9.67466V8.83954C23.0349 8.43743 23.4589 8.11055 23.9806 8.11055ZM15.5959 8.83954C15.5959 8.43743 16.0199 8.11055 16.5416 8.11055C17.0629 8.11055 17.4873 8.43743 17.4873 8.83954V10.9017C17.4873 11.3036 17.0633 11.6307 16.5416 11.6307C16.0199 11.6307 15.5959 11.3038 15.5959 10.9017V8.83954ZM36.0638 28.7061H11.9048V10.0838H14.6214C14.623 10.0838 14.6246 10.0835 14.6262 10.0835V10.9019C14.6262 11.7161 15.4857 12.3783 16.5416 12.3783C17.5975 12.3783 18.4569 11.7161 18.4569 10.9019V10.084H22.0653V10.9019C22.0653 11.7161 22.9247 12.3783 23.9806 12.3783C25.0365 12.3783 25.896 11.7161 25.896 10.9019V10.084H29.504V10.9019C29.504 11.7161 30.363 12.3783 31.4193 12.3783C32.4755 12.3783 33.3346 11.7161 33.3346 10.9019V10.0828C33.3388 10.0828 33.3424 10.0838 33.3466 10.0838H36.0638V28.7061Z" fill="#699FC9" stroke="#699FC9" stroke-width="0.00159473"/>
-</g>
-</g>
-</g>
-</svg>
-                    </div>
-                    <div class="flex-grow">
-                      <h2 class="text-gray-900 text-lg  ">
-                        Date of Travel
-                      </h2>
-                    </div>
-                  </div>
-
-                 <div class="md:h-[60px] md:w-[215px] h-16 w-60 flex items-center md:my-0 my-3     bg-white rounded-lg">
-                    <div className="     mr-5 ">
+<section class=" body-font">
+            <div class="container flex  px-5 py-10 mx-auto">
+              <div class="flex flex-wrap justify-evenly -m-2">
+                <div class="p-2 h-16 w-60">
+                  <div class="h-full flex items-center  border p-4 bg-white rounded-lg">
+                    <div className="   flex justify-center mr-4 ">
                     <svg width="48" height="37" viewBox="0 0 48 37" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="calendar-date-schedule-svgrepo-com 1">
 <g id="SVGRepo_iconCarrier">
@@ -102,22 +77,49 @@ function SearchUmrah() {
 </svg>                    </div>
                     <div class="flex-grow">
                       <h2 class="text-gray-900 text-lg">
-                        Return Date
+                        Date of Travel
                       </h2>
+                    </div>
                   </div>
                 </div>
 
-                <div class="md:h-[60px] md:w-[255px] h-16 w-60 flex items-center px-2 md:my-0 my-3    bg-white rounded-lg">
-                    <div className="     mr-6 ">
+                <div class="p-2 h-16 w-60">
+                  <div class="h-full flex items-center  border p-4 bg-white rounded-lg">
+                    <div className="   flex justify-center mr-4 ">
+                    <svg width="48" height="37" viewBox="0 0 48 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="calendar-date-schedule-svgrepo-com 1">
+<g id="SVGRepo_iconCarrier">
+<g id="Group">
+<path id="Vector" d="M18.2181 16.5732H15.0629C14.795 16.5732 14.5781 16.7403 14.5781 16.9469V19.379C14.5781 19.5853 14.795 19.7527 15.0629 19.7527H18.2181C18.4861 19.7527 18.7029 19.5853 18.7029 19.379V16.9469C18.7029 16.7406 18.4861 16.5732 18.2181 16.5732ZM17.7333 19.0053H15.5478V17.3206H17.7333V19.0053Z" fill="#699FC9" stroke="#699FC9" stroke-width="0.00159473"/>
+<path id="Vector_2" d="M25.5769 16.5732H22.4217C22.1538 16.5732 21.9369 16.7403 21.9369 16.9469V19.379C21.9369 19.5853 22.1538 19.7527 22.4217 19.7527H25.5769C25.8445 19.7527 26.0617 19.5853 26.0617 19.379V16.9469C26.0617 16.7406 25.8445 16.5732 25.5769 16.5732ZM25.0921 19.0053H22.9065V17.3206H25.0921V19.0053Z" fill="#699FC9" stroke="#699FC9" stroke-width="0.00159473"/>
+<path id="Vector_3" d="M32.7088 16.5732H29.5537C29.286 16.5732 29.0688 16.7403 29.0688 16.9469V19.379C29.0688 19.5853 29.286 19.7527 29.5537 19.7527H32.7088C32.9765 19.7527 33.1937 19.5853 33.1937 19.379V16.9469C33.1937 16.7406 32.9765 16.5732 32.7088 16.5732ZM32.224 19.0053H30.0385V17.3206H32.224V19.0053Z" fill="#699FC9" stroke="#699FC9" stroke-width="0.00159473"/>
+<path id="Vector_4" d="M18.2181 22.1131H15.0629C14.795 22.1131 14.5781 22.2805 14.5781 22.4868V24.9189C14.5781 25.1252 14.795 25.2926 15.0629 25.2926H18.2181C18.4861 25.2926 18.7029 25.1252 18.7029 24.9189V22.4868C18.7029 22.2805 18.4861 22.1131 18.2181 22.1131ZM17.7333 24.5452H15.5478V22.8605H17.7333V24.5452Z" fill="#699FC9" stroke="#699FC9" stroke-width="0.00159473"/>
+<path id="Vector_5" d="M25.5769 22.1131H22.4217C22.1538 22.1131 21.9369 22.2805 21.9369 22.4868V24.9189C21.9369 25.1252 22.1538 25.2926 22.4217 25.2926H25.5769C25.8445 25.2926 26.0617 25.1252 26.0617 24.9189V22.4868C26.0617 22.2805 25.8445 22.1131 25.5769 22.1131ZM25.0921 24.5452H22.9065V22.8605H25.0921V24.5452Z" fill="#699FC9" stroke="#699FC9" stroke-width="0.00159473"/>
+<path id="Vector_6" d="M32.7088 22.1131H29.5537C29.286 22.1131 29.0688 22.2805 29.0688 22.4868V24.9189C29.0688 25.1252 29.286 25.2926 29.5537 25.2926H32.7088C32.9765 25.2926 33.1937 25.1252 33.1937 24.9189V22.4868C33.1937 22.2805 32.9765 22.1131 32.7088 22.1131ZM32.224 24.5452H30.0385V22.8605H32.224V24.5452Z" fill="#699FC9" stroke="#699FC9" stroke-width="0.00159473"/>
+<path id="Vector_7" d="M36.5486 9.33633H33.3466C33.3424 9.33633 33.3388 9.33708 33.3346 9.33733V8.83954C33.3346 8.02535 32.4755 7.36313 31.4193 7.36313C30.363 7.36313 29.504 8.0256 29.504 8.83954V9.33633H25.896V8.83954C25.896 8.02535 25.0369 7.36313 23.9806 7.36313C22.9244 7.36313 22.0653 8.0256 22.0653 8.83954V9.33633H18.4569V8.83954C18.4569 8.02535 17.5978 7.36313 16.5416 7.36313C15.4853 7.36313 14.6262 8.0256 14.6262 8.83954V9.33658C14.6246 9.33658 14.623 9.33633 14.6214 9.33633H11.42C11.1521 9.33633 10.9352 9.5035 10.9352 9.71004V29.0798C10.9352 29.2861 11.1521 29.4535 11.42 29.4535H36.5486C36.8163 29.4535 37.0335 29.2861 37.0335 29.0798V9.71004C37.0335 9.5035 36.8163 9.33633 36.5486 9.33633ZM30.4736 8.83954C30.4736 8.43743 30.8976 8.11055 31.4193 8.11055C31.941 8.11055 32.365 8.43743 32.365 8.83954V10.9017C32.365 11.3036 31.941 11.6307 31.4193 11.6307C30.8976 11.6307 30.4736 11.3038 30.4736 10.9017V8.83954ZM23.9806 8.11055C24.5019 8.11055 24.9263 8.43743 24.9263 8.83954V10.9017C24.9263 11.3036 24.5023 11.6307 23.9806 11.6307C23.4589 11.6307 23.0349 11.3038 23.0349 10.9017V9.74492C23.0362 9.73321 23.0394 9.722 23.0394 9.70979C23.0394 9.69758 23.0362 9.68637 23.0349 9.67466V8.83954C23.0349 8.43743 23.4589 8.11055 23.9806 8.11055ZM15.5959 8.83954C15.5959 8.43743 16.0199 8.11055 16.5416 8.11055C17.0629 8.11055 17.4873 8.43743 17.4873 8.83954V10.9017C17.4873 11.3036 17.0633 11.6307 16.5416 11.6307C16.0199 11.6307 15.5959 11.3038 15.5959 10.9017V8.83954ZM36.0638 28.7061H11.9048V10.0838H14.6214C14.623 10.0838 14.6246 10.0835 14.6262 10.0835V10.9019C14.6262 11.7161 15.4857 12.3783 16.5416 12.3783C17.5975 12.3783 18.4569 11.7161 18.4569 10.9019V10.084H22.0653V10.9019C22.0653 11.7161 22.9247 12.3783 23.9806 12.3783C25.0365 12.3783 25.896 11.7161 25.896 10.9019V10.084H29.504V10.9019C29.504 11.7161 30.363 12.3783 31.4193 12.3783C32.4755 12.3783 33.3346 11.7161 33.3346 10.9019V10.0828C33.3388 10.0828 33.3424 10.0838 33.3466 10.0838H36.0638V28.7061Z" fill="#699FC9" stroke="#699FC9" stroke-width="0.00159473"/>
+</g>
+</g>
+</g>
+</svg>                     </div>
+                    <div class="flex-grow">
+                      <h2 class="text-gray-900 text-lg">
+                        Return Date
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="p-2 h-16 w-60">
+                  <div class="h-full flex items-center  border p-2 bg-white rounded-lg">
+                    <div className="   flex justify-center mr-4 ">
                     <svg width="42" height="32" viewBox="0 0 42 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="city-svgrepo-com (3) 1">
 <g id="SVGRepo_iconCarrier">
 <path id="Vector" d="M12.25 12H12.2675M12.25 17.3333H12.2675M12.25 22.6667H12.2675M26.25 9.33333H26.2675M26.25 14.6667H26.2675M26.25 20H26.2675M31.5 18.6667H31.5175M31.5 24H31.5175M15.75 6.66667H7C6.03351 6.66667 5.25 7.26363 5.25 8V26.6667C5.25 27.4031 6.03351 28 7 28H15.75M21 6.13333V25.8667C21 26.6135 21 26.9868 21.1908 27.272C21.3586 27.5229 21.6261 27.7268 21.9555 27.8547C22.3298 28 22.8198 28 23.8 28H33.95C34.9302 28 35.4202 28 35.7945 27.8547C36.1239 27.7268 36.3914 27.5229 36.5593 27.272C36.75 26.9868 36.75 26.6135 36.75 25.8667V15.3333C36.75 14.7121 36.75 14.4015 36.6168 14.1564C36.4392 13.8297 36.0985 13.5701 35.6697 13.4348C35.3481 13.3333 34.9403 13.3333 34.125 13.3333C33.3097 13.3333 32.9019 13.3333 32.5803 13.2318C32.1515 13.0965 31.8108 12.8369 31.6332 12.5102C31.5 12.2652 31.5 11.9546 31.5 11.3333V6.13333C31.5 5.3866 31.5 5.01323 31.3093 4.72801C31.1414 4.47713 30.8739 4.27316 30.5445 4.14532C30.1702 4 29.6802 4 28.7 4H23.8C22.8198 4 22.3298 4 21.9555 4.14532C21.6261 4.27316 21.3586 4.47713 21.1908 4.72801C21 5.01323 21 5.3866 21 6.13333Z" stroke="#699FC9" stroke-width="1.932" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </g>
-</svg>
-                    </div>
-                    <div class="flex-grow  text-lg">
+</svg>                    </div>
+                    <div class="flex-grow text-lg">
                       <select required>
                         <option value="" selected disabled>
                           Choose your city
@@ -127,10 +129,12 @@ function SearchUmrah() {
                         <option value="a-value-here">Fully valid</option>
                       </select>{" "}
                     </div>
+                  </div>
                 </div>
 
-                <div class="md:h-[60px] md:w-[205px] h-16 w-60 flex items-center px-2 md:my-0 my-3   bg-white rounded-lg">
-                    <div className="     ">
+                <div class="p-2 h-16 w-60">
+                  <div class="h-full flex items-center  border px-3.5 bg-white rounded-lg">
+                    <div className="   flex justify-center mr-4 ">
                     <svg width="57" height="50" viewBox="0 0 57 52" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="city-svgrepo-com (1) 1" clip-path="url(#clip0_1_403)">
 <g id="SVGRepo_iconCarrier">
@@ -146,43 +150,44 @@ function SearchUmrah() {
 <rect width="57" height="52" fill="white"/>
 </clipPath>
 </defs>
-</svg>
-                    </div>
-                    <div class="">
-                      <h2 class="text-gray-900  text-lg ">
+</svg>                    </div>
+                    <div class="flex-grow">
+                      <h2 class="text-gray-900  text-lg">
                         Total Passengers
                       </h2>
                     </div>
-                </div>
-                </div>
-                <div class="flex  justify-around md:flex-row flex-col   		">
-
-
-
-                <div class="md:h-[60px] md:w-[215px] flex h-16 w-60 items-center px-2 md:my-5 my-2    bg-white rounded-lg">
-                    <div className="     mr-5 ">
-                    <img src={mecca} alt="" />
-                    </div>
-                    <div class="flex-grow">
-                      <h2 class="text-gray-900 text-lg  ">
-                      Nights in Mecca
-                      </h2>
-                    </div>
                   </div>
+                </div>
 
-                 <div class="md:h-[60px] md:w-[215px] h-16 w-60 flex items-center  px-2  md:my-5 my-2   bg-white rounded-lg">
-                    <div className="     mr-5 ">
-<img src={madina} alt="" />
-                   </div>
+                <div class="p-2 h-16 w-60">
+                  <div class="h-full flex items-center  border p-2.5 bg-white rounded-lg">
+                    <div className="   flex justify-center mr-4 ">
+                      <img className="h-8 w-8" src={mecca} alt="..." />
+                    </div>
                     <div class="flex-grow">
                       <h2 class="text-gray-900 text-lg">
-                      Nights in madina
+                        Night in Mecca
                       </h2>
+                    </div>
                   </div>
                 </div>
 
-                <div class="md:h-[60px] md:w-[258px] h-16 w-60 flex items-center    px-3  md:my-5 my-2  bg-white rounded-lg">
-                    <div className="     mr-5 ">
+                <div class="p-2 h-16 w-60">
+                  <div class="h-full flex items-center  border px-2.5 bg-white rounded-lg">
+                    <div className="   flex justify-center mr-4 ">
+                      <img src={madina} alt="..." />
+                    </div>
+                    <div class="flex-grow">
+                      <h2 class="text-gray-900 text-lg">
+                        Night in Madina
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="p-2 h-16 w-60">
+                  <div class="h-full flex items-center  border p-2.5 bg-white rounded-lg">
+                    <div className="   flex justify-center  ">
                     <svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="passport-1-svgrepo-com 1">
 <g id="SVGRepo_iconCarrier">
@@ -195,48 +200,66 @@ function SearchUmrah() {
 </g>
 </g>
 </g>
-</svg>
+</svg>                    </div>
+                    <div class="flex-grow  w-52  h-12 flex justify-between  items-center   text-black  ">
+                      <h2 class="text-gray-900 text-lg">
+                        Umrah Visa
+                      </h2>
 
+                      <label className="font-normal  text-xs" htmlFor="yes">
+                        Yes
+                      </label>
+                      <input type="radio" name="visa" id="yes" />
+                      <label className="font-normal text-xs" htmlFor="no">
+                        No
+                      </label>
+                      <input type="radio" name="visa" id="no" />
                     </div>
-
-                    
-                    <div class="flex-grow flex items-center text-lg">
-
-                    Umrah Visa 
-                                        
-              <label className="font-normal mx-1.5  text-xs" htmlFor="yes">
-              Yes
-            </label>
-            <input type="radio" name="visa" id="yes" />
-            <label className="font-normal mx-1.5 text-xs" htmlFor="no">
-              No
-            </label>
-            <input type="radio" name="visa" id="no" />
-                    </div>
+                  </div>
                 </div>
 
-
-                <div class="md:h-[60px] md:w-[210px] h-16 w-60 flex items-center  md:my-5 my-2     bg-[#E4F0FF] rounded-lg">
-                   
+                <div class="p-2 h-16 w-60 text-center">
+                  <div class="h-full flex   border p-2.5 bg-white rounded-lg">
+                    <div className="   flex justify-center mr-4 "></div>
                     <div class="flex-grow">
-                      <h2 class=" text-lg text-center text-[#699FC9] ">
-                      Continue                
-                            </h2>
+                      <h2 class="text-gray-900 text-lg">
+                        Continue
+                      </h2>
                     </div>
+                  </div>
                 </div>
 
-
-                </div>
-
-
-
-
+                {/* Images */}
+              </div>
             </div>
-          
-        </div>
+          </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
+       
 
         {/* Button Section End */}
-
+        </div>
        
 
         <div className="">
@@ -382,3 +405,5 @@ function SearchUmrah() {
 }
 
 export default SearchUmrah;
+
+

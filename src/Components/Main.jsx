@@ -42,22 +42,22 @@ function Main() {
   };
 
   return (
-    <div className=" bg-black min-h-screen">
+    <div className=" bg-black min-h-screen flex">
       {/* Navbar Start */}
 
       <Navbar togle={togle} />
 
       {/* Navbar Close */}
 
-      <div className=" flex   md:mt-[77px] mt-[150px] bg-yellow-300 mb-0">
+      <div className=" flex  w-full   md:mt-[77px] mt-[150px] bg-yellow-300 mb-0">
         {/* SideBar Start */}
 {
   Sidebar  ?
-<div className="w-[20%]   bg-[#699FC9]  ">
-          <div className="      overflow-y-auto  md:p-4 p-1 fixed bg-[#699FC9] ">
+<div className="w-1/6 sticky  ">
+          <div className="  w-1/6 overflow-hidden md:p-4 p-1 h-full  fixed bg-[#699FC9] ">
           <ul className=" space-y-6 mt-8 text-center md:leading-loose ">
 
-<li className="mx-auto text-center ">
+<li className="mx-auto text-center">
     
     <Link
       onClick={() => setcontent("SearchUmrah")}
@@ -80,7 +80,7 @@ function Main() {
         />
       </svg>
 
-     <p className=" mx-1 text-white md:mx-3 md:text-[20px]  text-xs    " >
+     <p className=" mx-1 text-white md:mx-3 md:text-sm    " >
         Umrah Packages
       </p>
      
@@ -121,7 +121,7 @@ function Main() {
         </g>
       </svg>
 
-     <p className=" mx-1 text-white md:mx-2.5 md:text-[20px] text-xs   " >
+     <p className=" mx-1 text-white md:mx-2.5 md:text-sm text-xs   " >
         Flights
       </p>
      
@@ -296,7 +296,7 @@ function Main() {
         />
       </svg>
 
-     <p className=" mx-1 text-white md:mx-3 md:text-[20px]  text-xs    " >
+     <p className=" mx-1 text-white md:mx-3 md:text-sm  text-xs    " >
       Get Hotel
       </p>
      
@@ -326,7 +326,7 @@ function Main() {
         />
       </svg>
 
-     <p className=" mx-1 text-white md:mx-1 md:text-[20px]  text-xs    " >
+     <p className=" mx-1 text-white md:mx-1 md:text-sm text-xs    " >
         Manage Booking
       </p>
      
@@ -364,7 +364,7 @@ function Main() {
         />
       </svg>
 
-     <p className=" mx-1 text-white md:mx-3 md:text-[20px]  text-xs   " >
+     <p className=" mx-1 text-white md:mx-3 md:text-sm  text-xs   " >
         Get Insurance
       </p>
      
@@ -418,7 +418,7 @@ function Main() {
           />
         </g>
       </svg>
-     <p className=" mx-1 text-white md:mx-3 md:text-[20px]  text-xs   " >
+     <p className=" mx-1 text-white md:mx-3 md:text-sm  text-xs   " >
         Deals
       </p>
      
@@ -495,7 +495,7 @@ function Main() {
         </g>
       </svg>
 
-     <p className=" mx-1 text-white md:mx-0 md:text-[20px] text-xs    " >
+     <p className=" mx-1 text-white md:mx-0 md:text-sm text-xs    " >
         Get Visa
       </p>
      
@@ -556,7 +556,7 @@ function Main() {
         </g>
       </svg>
 
-     <p className=" mx-1 text-white md:mx-3 md:text-[20px] text-xs   " >
+     <p className=" mx-1 text-white md:mx-3 md:text-sm text-xs   " >
         Trip
       </p>
      
@@ -575,9 +575,12 @@ function Main() {
 </ul>
           </div>
         </div>
+
+
+
   :
-<div className="w-[5%] hover:w-[15%]  bg-[#699FC9] group "  >
-          <div className="     overflow-hidden md:p-4 p-1 fixed bg-[#699FC9] ">
+<div className="w-[6%] sticky     "  >
+          <div className=" w-[6%] fixed hover:w-[16%] group  overflow-hidden md:p-4 p-1 h-full   bg-[#699FC9] ">
          
 
             <ul className=" space-y-6 mt-8 text-center md:leading-loose ">
@@ -1106,9 +1109,26 @@ function Main() {
 }
         
 
+  {/* <div className="sticky w-1/6  ">
+
+
+<div className=" fixed w-1/6 bg-gray-900 text-white p-4">
+<h1 >pakistan</h1>
+<h1>india</h1>
+  <h1>Australia</h1>
+  <h1>Afghanistan</h1>
+  <h1>Newzealand</h1>
+  <h1>Bangladesh</h1>
+        </div>
+
+
+        </div> */}
+
         {/* Sidebar Close */}
 
-        <div className=" w-[95%]  bg-gray-100 ">
+{
+  Sidebar ? 
+<div className=" w-5/6 bg-gray-100 ">
           {content == "SearchUmrah" ? (
            <>
             <SearchUmrah /> 
@@ -1120,9 +1140,62 @@ function Main() {
             <Flight /> // else if
           ) : content == "ManageBooking" ? (
             <ManageBooking /> // else if
-          ) : null}
-        </div>
+          ) 
+          
+          
+          :
+          null     
+          }
+            
+         
+           </div>
+  :
+<div className=" w-[94%] bg-gray-100 ">
+          {content == "SearchUmrah" ? (
+           <>
+            <SearchUmrah /> 
+            <Footer/></>
+// if
+          ) : content == "GetHotel" ? (
+            <Makkah /> // else if
+          ) : content == "Flight" ? (
+            <Flight /> // else if
+          ) : content == "ManageBooking" ? (
+            <ManageBooking /> // else if
+          ) 
+          
+          
+          :
+          null     
+          }
+            
+         
+           </div>
+
+
+}
+
+
+
+        
+
+
+
+
+
+
+{/* <div className="bg-blue-700  w-5/6  text-white">
+  
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptate, aliquam aliquid quaerat dolore alias ab illo quis labore! Aliquid porro enim odit, quis provident non! Suscipit molestias quis dolore quo odit alias similique ipsum ducimus enim adipisci, quos doloremque illo, nisi voluptatibus dolores et aspernatur perferendis possimus voluptas aliquid, libero inventore! Totam repellendus ipsam minima ducimus officiis eaque amet iure aliquid animi possimus veniam labore enim, assumenda ut deserunt, harum voluptates alias. Quae, necessitatibus nobis ipsam iure vel fuga natus quam atque quidem, magni pariatur sunt sint. Exercitationem minus in suscipit illo a vitae distinctio ad voluptates magnam, eligendi, rerum rem deleniti natus, dignissimos vel animi! A maiores veniam impedit voluptatem, ipsum libero rem atque dicta ex quis, voluptates nihil ducimus dolorum ratione. Quod cumque, doloribus iste et atque voluptates tenetur nisi molestiae animi blanditiis eius cupiditate, aliquid, nostrum ducimus cum a itaque magnam impedit dicta autem eligendi dolorum! Repellendus, obcaecati reprehenderit? Rerum excepturi quod, dicta dignissimos provident corporis iusto optio dolorum voluptatum, beatae illo a voluptas ab dolor repellendus aliquam, esse officia non corrupti fugit? Amet delectus, facilis consequuntur optio ratione, natus deserunt dolores soluta quidem laudantium magni aspernatur qui voluptatibus in numquam pariatur quisquam ex unde? Veritatis impedit distinctio quaerat sed alias quibusdam autem tempora beatae atque aut ipsam, maxime corporis id. Animi, facere? Blanditiis culpa, ab cum, praesentium consectetur pariatur ut aperiam dicta quam, quae harum laborum aspernatur consequuntur voluptate sint! Eveniet, amet! Aspernatur quae nam quam. Quisquam consequatur consectetur fuga atque quae libero architecto temporibus aliquid. Voluptate, molestias quis deserunt rem quidem ea amet nostrum aperiam, odio quaerat minima iste deleniti itaque accusamus ipsum esse neque ipsam dolorem doloremque numquam. Expedita, corrupti! Iste corrupti ad autem, maiores reprehenderit esse perferendis labore earum voluptatem enim molestiae cupiditate atque rerum pariatur, id voluptas harum! Ut placeat mollitia earum omnis suscipit amet, numquam assumenda iste voluptas velit quo nostrum vel ab perferendis consequuntur dolorem officia odio ipsum, enim explicabo aliquid! Architecto obcaecati, ipsa amet reprehenderit nulla est, perspiciatis ratione deleniti aspernatur unde quia optio laborum nesciunt mollitia, suscipit similique? Saepe voluptatibus minus blanditiis facilis libero sed error cupiditate recusandae! Hic ducimus modi, explicabo illo distinctio praesentium perspiciatis saepe beatae error aut rem harum vel dolores ut, sit placeat corrupti soluta illum quo quia ex facilis laboriosam? Error, unde eaque nihil reiciendis aspernatur nostrum provident perspiciatis, vitae totam atque sequi similique architecto ipsa eius quidem dolorum debitis? Suscipit libero doloremque voluptate magnam modi accusantium consectetur beatae. Sed rem consequuntur pariatur et deserunt nemo iste minima facilis atque cupiditate, veritatis sit ipsum quas ratione molestiae nisi aperiam voluptates dignissimos architecto quae autem voluptas ipsa iure! Ipsum libero dicta magni fugit, tenetur dolorum temporibus vel ea, perspiciatis rem deleniti doloribus eos provident itaque dolores repudiandae sint voluptatem rerum unde minima labore alias, molestiae repellendus? Maxime quidem voluptas in sunt deserunt quae, amet pariatur, quibusdam facere at dolorem, eveniet assumenda illo maiores veniam! Asperiores itaque nisi voluptas rerum magni ratione quae officiis? Aperiam voluptas quia nulla temporibus. Sequi, maxime officiis! Iure laborum quibusdam aliquam impedit! Ipsa libero praesentium esse officia eos odio assumenda numquam architecto ducimus dolorum voluptatibus vero nisi, hic aliquid ad. Culpa quasi consequuntur similique soluta harum deserunt iste repudiandae fugiat nostrum eos atque laboriosam voluptatum nulla at voluptatibus, velit recusandae nihil molestias quod vel quos possimus unde? Facilis, excepturi dolorem? Eum, quos sequi, repellendus similique amet quidem beatae exercitationem expedita praesentium eius eaque nulla sunt quod autem laboriosam unde. Animi laborum sed, nobis, in dolorem officia labore aliquam corporis laudantium est ea fugit natus repellendus, sunt nulla quod? Magni, maiores earum. Dignissimos laborum vero possimus sit ratione? Cum, sapiente similique. Omnis molestias, ut nobis vel delectus maxime id iure mollitia temporibus, placeat sint eos aliquid facilis eius minus, ex magni. Magnam, odio. A at qui, obcaecati nemo repellendus repellat neque quasi voluptate ad eaque pariatur blanditiis nam deleniti iure vero et recusandae, fuga libero illum ipsum voluptatum doloremque! Quaerat enim dolorum labore ullam ipsum! Cupiditate dignissimos ducimus quisquam necessitatibus iure perspiciatis nemo quidem doloribus quo? Quos sint a dolores numquam mollitia quis tempora ut rem vero recusandae quisquam aut voluptate blanditiis, molestias porro harum delectus sapiente aspernatur cupiditate nesciunt nam natus? Totam officia quos perferendis odio quaerat sunt, aspernatur molestiae unde corporis vitae ex dolor soluta magni inventore minus animi fuga quasi magnam hic dicta quidem facilis excepturi at exercitationem. Porro deserunt maiores odio harum illo maxime repellendus. Sint ipsa totam a earum quas mollitia suscipit magnam aspernatur eius maxime sed labore, officiis architecto alias harum fuga tempora obcaecati quasi assumenda corporis recusandae! Deserunt, sapiente hic distinctio esse qui fuga, ipsum magni quis harum similique, repellendus cum. Facere dolor beatae nisi consectetur eos id aspernatur officiis magnam porro, vitae blanditiis atque quod aut natus quaerat, exercitationem quasi magni quae veritatis! Doloribus, earum. Expedita provident commodi ex vitae suscipit corporis quod quae ad. Veritatis autem nihil id veniam aperiam explicabo accusantium, hic ut architecto, corporis ipsam, assumenda eligendi odio harum saepe numquam? Aliquam, asperiores voluptas soluta voluptatum numquam fugit rem rerum architecto nobis a animi quibusdam voluptates cum quis recusandae? Unde vel aut quos! Totam eius velit tempora vitae blanditiis minima eveniet a dolorum placeat, iste, provident nulla voluptas nisi accusantium repellat aliquid omnis, saepe cupiditate? Odit ratione blanditiis suscipit aspernatur alias sit eaque nisi, at vel non vitae optio dignissimos nesciunt totam rerum consequuntur voluptatibus ea. Hic rem aperiam repellat corporis facilis maxime deleniti et cumque sed amet at repellendus corrupti autem quod, quaerat nobis debitis esse aut nulla. Eum laboriosam doloremque, cupiditate sequi error aperiam vel recusandae incidunt minus minima porro eius iusto debitis tempore repellat ut iste eligendi quis maxime natus libero cumque corporis dolorum distinctio. Laboriosam impedit facere, accusamus sunt vitae sint porro at voluptatum ipsam aperiam et sapiente, iusto eos id suscipit sed minus? Officiis rem incidunt vero aliquid officia quod sunt? Nam exercitationem vitae non accusantium quidem, aut aliquam modi sit eveniet blanditiis possimus dolorum repellat nemo ad adipisci. Voluptate nihil mollitia dolore tempora eius repellat totam ipsa porro a? Explicabo quis molestias at?</p>
+ 
+</div> */}
+
       </div>
+
+
+
+
+
     </div>
   );
 }
