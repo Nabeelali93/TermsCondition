@@ -219,10 +219,10 @@ function SearchUmrah() {
                 </div>
 
                 <div class="p-2 h-16 w-60 text-center">
-                  <div class="h-full flex   border p-2.5 bg-white rounded-lg">
+                  <div class="h-full flex   border p-2.5 bg-[#E4F0FF] rounded-lg">
                     <div className="   flex justify-center mr-4 "></div>
                     <div class="flex-grow">
-                      <h2 class="text-gray-900 text-lg">
+                      <h2 class="text-[#699FC9] text-lg">
                         Continue
                       </h2>
                     </div>
