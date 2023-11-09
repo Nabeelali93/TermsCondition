@@ -42,7 +42,7 @@ function Main() {
   };
 
   return (
-    <div className=" bg-black min-h-screen flex">
+    <div className=" bg-black min-h-screen flex overflow-hidden">
       {/* Navbar Start */}
 
       <Navbar togle={togle} />
@@ -55,9 +55,9 @@ function Main() {
   Sidebar  ?
 <div className="w-1/6 sticky  ">
           <div className="  w-1/6 overflow-hidden md:p-4 p-1 h-full  fixed bg-[#699FC9] ">
-          <ul className=" space-y-6 mt-8 text-center md:leading-loose ">
+          <ul className=" space-y-6 mt-8  md:leading-loose ">
 
-<li className="mx-auto text-center">
+<li className="mx-auto ">
     
     <Link
       onClick={() => setcontent("SearchUmrah")}
@@ -80,7 +80,7 @@ function Main() {
         />
       </svg>
 
-     <p className=" mx-1 text-white md:mx-3 md:text-sm    " >
+     <p className=" mx-1 text-white md:mx-3 md:text-sm text-xs    " >
         Umrah Packages
       </p>
      
@@ -133,7 +133,7 @@ function Main() {
   <li className="mx-auto text-center ">
     
     <Link
-      onClick={() => setcontent("SearchUmrah")}
+      onClick={() => setcontent("GetHotel")}
       className="items-center flex"
     >
     
@@ -143,6 +143,7 @@ function Main() {
         viewBox="4 3 22 22"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+       
       >
         <path
           d="M10.8469 8.34861H11.0969V8.09861V7.42514C11.0969 7.39642 11.1202 7.37311 11.149 7.37311C11.1777 7.37311 11.201 7.39642 11.201 7.42514V9.37608C11.201 9.40481 11.1777 9.42812 11.149 9.42812C11.1202 9.42812 11.0969 9.40481 11.0969 9.37608V8.70268V8.45268H10.8469H10.3536H10.1036V8.70268V9.37608C10.1036 9.40481 10.0803 9.42812 10.0515 9.42812C10.0228 9.42812 9.99951 9.40481 9.99951 9.37608V7.42514C9.99951 7.39642 10.0228 7.37311 10.0515 7.37311C10.0803 7.37311 10.1036 7.39642 10.1036 7.42514V8.09861V8.34861H10.3536H10.8469Z"
@@ -306,7 +307,7 @@ function Main() {
 
 
 
-  <li className="mx-auto text-center ">
+  <li className="mx-auto  ">
     
     <Link
       onClick={() => setcontent("SearchUmrah")}
@@ -318,6 +319,7 @@ function Main() {
         viewBox="4 2 30 30"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        
       >
         <path
           d="M22.2382 12.3418C20.5144 12.3418 19.8096 11.1227 20.6668 9.62746C21.162 8.7608 20.8668 7.65604 20.0001 7.1608L18.3525 6.21794C17.6001 5.77032 16.6287 6.03699 16.1811 6.78937L16.0763 6.97032C15.2192 8.46556 13.8096 8.46556 12.943 6.97032L12.8382 6.78937C12.4096 6.03699 11.4382 5.77032 10.6858 6.21794L9.03822 7.1608C8.17155 7.65604 7.87631 8.77032 8.37155 9.63699C9.23822 11.1227 8.53346 12.3418 6.80965 12.3418C5.81917 12.3418 5.00012 13.1513 5.00012 14.1513V15.8275C5.00012 16.8179 5.80965 17.637 6.80965 17.637C8.53346 17.637 9.23822 18.856 8.37155 20.3513C7.87631 21.2179 8.17155 22.3227 9.03822 22.8179L10.6858 23.7608C11.4382 24.2084 12.4096 23.9418 12.8573 23.1894L12.962 23.0084C13.8192 21.5132 15.2287 21.5132 16.0954 23.0084L16.2001 23.1894C16.6477 23.9418 17.6192 24.2084 18.3716 23.7608L20.0192 22.8179C20.8858 22.3227 21.1811 21.2084 20.6858 20.3513C19.8192 18.856 20.5239 17.637 22.2477 17.637C23.2382 17.637 24.0573 16.8275 24.0573 15.8275V14.1513C24.0477 13.1608 23.2382 12.3418 22.2382 12.3418ZM14.5239 18.0846C12.8192 18.0846 11.4287 16.6941 11.4287 14.9894C11.4287 13.2846 12.8192 11.8941 14.5239 11.8941C16.2287 11.8941 17.6192 13.2846 17.6192 14.9894C17.6192 16.6941 16.2287 18.0846 14.5239 18.0846Z"
@@ -326,7 +328,7 @@ function Main() {
         />
       </svg>
 
-     <p className=" mx-1 text-white md:mx-1 md:text-sm text-xs    " >
+     <p className="  text-white flex-wrap md:mx-1 md:text-sm text-xs    " >
         Manage Booking
       </p>
      
@@ -335,7 +337,7 @@ function Main() {
 
 
 
-  <li className="mx-auto text-center ">
+  <li className="mx-auto  ">
     
     <Link
       onClick={() => setcontent("SearchUmrah")}
@@ -1109,24 +1111,14 @@ function Main() {
 }
         
 
-  {/* <div className="sticky w-1/6  ">
-
-
-<div className=" fixed w-1/6 bg-gray-900 text-white p-4">
-<h1 >pakistan</h1>
-<h1>india</h1>
-  <h1>Australia</h1>
-  <h1>Afghanistan</h1>
-  <h1>Newzealand</h1>
-  <h1>Bangladesh</h1>
-        </div>
-
-
-        </div> */}
+  
 
         {/* Sidebar Close */}
 
 {
+
+
+// body content start
   Sidebar ? 
 <div className=" w-5/6 bg-gray-100 ">
           {content == "SearchUmrah" ? (
@@ -1151,6 +1143,8 @@ function Main() {
            </div>
   :
 <div className=" w-[94%] bg-gray-100 ">
+
+
           {content == "SearchUmrah" ? (
            <>
             <SearchUmrah /> 
@@ -1175,6 +1169,7 @@ function Main() {
 
 }
 
+{/* // body content end */}
 
 
         
@@ -1184,11 +1179,7 @@ function Main() {
 
 
 
-{/* <div className="bg-blue-700  w-5/6  text-white">
-  
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptate, aliquam aliquid quaerat dolore alias ab illo quis labore! Aliquid porro enim odit, quis provident non! Suscipit molestias quis dolore quo odit alias similique ipsum ducimus enim adipisci, quos doloremque illo, nisi voluptatibus dolores et aspernatur perferendis possimus voluptas aliquid, libero inventore! Totam repellendus ipsam minima ducimus officiis eaque amet iure aliquid animi possimus veniam labore enim, assumenda ut deserunt, harum voluptates alias. Quae, necessitatibus nobis ipsam iure vel fuga natus quam atque quidem, magni pariatur sunt sint. Exercitationem minus in suscipit illo a vitae distinctio ad voluptates magnam, eligendi, rerum rem deleniti natus, dignissimos vel animi! A maiores veniam impedit voluptatem, ipsum libero rem atque dicta ex quis, voluptates nihil ducimus dolorum ratione. Quod cumque, doloribus iste et atque voluptates tenetur nisi molestiae animi blanditiis eius cupiditate, aliquid, nostrum ducimus cum a itaque magnam impedit dicta autem eligendi dolorum! Repellendus, obcaecati reprehenderit? Rerum excepturi quod, dicta dignissimos provident corporis iusto optio dolorum voluptatum, beatae illo a voluptas ab dolor repellendus aliquam, esse officia non corrupti fugit? Amet delectus, facilis consequuntur optio ratione, natus deserunt dolores soluta quidem laudantium magni aspernatur qui voluptatibus in numquam pariatur quisquam ex unde? Veritatis impedit distinctio quaerat sed alias quibusdam autem tempora beatae atque aut ipsam, maxime corporis id. Animi, facere? Blanditiis culpa, ab cum, praesentium consectetur pariatur ut aperiam dicta quam, quae harum laborum aspernatur consequuntur voluptate sint! Eveniet, amet! Aspernatur quae nam quam. Quisquam consequatur consectetur fuga atque quae libero architecto temporibus aliquid. Voluptate, molestias quis deserunt rem quidem ea amet nostrum aperiam, odio quaerat minima iste deleniti itaque accusamus ipsum esse neque ipsam dolorem doloremque numquam. Expedita, corrupti! Iste corrupti ad autem, maiores reprehenderit esse perferendis labore earum voluptatem enim molestiae cupiditate atque rerum pariatur, id voluptas harum! Ut placeat mollitia earum omnis suscipit amet, numquam assumenda iste voluptas velit quo nostrum vel ab perferendis consequuntur dolorem officia odio ipsum, enim explicabo aliquid! Architecto obcaecati, ipsa amet reprehenderit nulla est, perspiciatis ratione deleniti aspernatur unde quia optio laborum nesciunt mollitia, suscipit similique? Saepe voluptatibus minus blanditiis facilis libero sed error cupiditate recusandae! Hic ducimus modi, explicabo illo distinctio praesentium perspiciatis saepe beatae error aut rem harum vel dolores ut, sit placeat corrupti soluta illum quo quia ex facilis laboriosam? Error, unde eaque nihil reiciendis aspernatur nostrum provident perspiciatis, vitae totam atque sequi similique architecto ipsa eius quidem dolorum debitis? Suscipit libero doloremque voluptate magnam modi accusantium consectetur beatae. Sed rem consequuntur pariatur et deserunt nemo iste minima facilis atque cupiditate, veritatis sit ipsum quas ratione molestiae nisi aperiam voluptates dignissimos architecto quae autem voluptas ipsa iure! Ipsum libero dicta magni fugit, tenetur dolorum temporibus vel ea, perspiciatis rem deleniti doloribus eos provident itaque dolores repudiandae sint voluptatem rerum unde minima labore alias, molestiae repellendus? Maxime quidem voluptas in sunt deserunt quae, amet pariatur, quibusdam facere at dolorem, eveniet assumenda illo maiores veniam! Asperiores itaque nisi voluptas rerum magni ratione quae officiis? Aperiam voluptas quia nulla temporibus. Sequi, maxime officiis! Iure laborum quibusdam aliquam impedit! Ipsa libero praesentium esse officia eos odio assumenda numquam architecto ducimus dolorum voluptatibus vero nisi, hic aliquid ad. Culpa quasi consequuntur similique soluta harum deserunt iste repudiandae fugiat nostrum eos atque laboriosam voluptatum nulla at voluptatibus, velit recusandae nihil molestias quod vel quos possimus unde? Facilis, excepturi dolorem? Eum, quos sequi, repellendus similique amet quidem beatae exercitationem expedita praesentium eius eaque nulla sunt quod autem laboriosam unde. Animi laborum sed, nobis, in dolorem officia labore aliquam corporis laudantium est ea fugit natus repellendus, sunt nulla quod? Magni, maiores earum. Dignissimos laborum vero possimus sit ratione? Cum, sapiente similique. Omnis molestias, ut nobis vel delectus maxime id iure mollitia temporibus, placeat sint eos aliquid facilis eius minus, ex magni. Magnam, odio. A at qui, obcaecati nemo repellendus repellat neque quasi voluptate ad eaque pariatur blanditiis nam deleniti iure vero et recusandae, fuga libero illum ipsum voluptatum doloremque! Quaerat enim dolorum labore ullam ipsum! Cupiditate dignissimos ducimus quisquam necessitatibus iure perspiciatis nemo quidem doloribus quo? Quos sint a dolores numquam mollitia quis tempora ut rem vero recusandae quisquam aut voluptate blanditiis, molestias porro harum delectus sapiente aspernatur cupiditate nesciunt nam natus? Totam officia quos perferendis odio quaerat sunt, aspernatur molestiae unde corporis vitae ex dolor soluta magni inventore minus animi fuga quasi magnam hic dicta quidem facilis excepturi at exercitationem. Porro deserunt maiores odio harum illo maxime repellendus. Sint ipsa totam a earum quas mollitia suscipit magnam aspernatur eius maxime sed labore, officiis architecto alias harum fuga tempora obcaecati quasi assumenda corporis recusandae! Deserunt, sapiente hic distinctio esse qui fuga, ipsum magni quis harum similique, repellendus cum. Facere dolor beatae nisi consectetur eos id aspernatur officiis magnam porro, vitae blanditiis atque quod aut natus quaerat, exercitationem quasi magni quae veritatis! Doloribus, earum. Expedita provident commodi ex vitae suscipit corporis quod quae ad. Veritatis autem nihil id veniam aperiam explicabo accusantium, hic ut architecto, corporis ipsam, assumenda eligendi odio harum saepe numquam? Aliquam, asperiores voluptas soluta voluptatum numquam fugit rem rerum architecto nobis a animi quibusdam voluptates cum quis recusandae? Unde vel aut quos! Totam eius velit tempora vitae blanditiis minima eveniet a dolorum placeat, iste, provident nulla voluptas nisi accusantium repellat aliquid omnis, saepe cupiditate? Odit ratione blanditiis suscipit aspernatur alias sit eaque nisi, at vel non vitae optio dignissimos nesciunt totam rerum consequuntur voluptatibus ea. Hic rem aperiam repellat corporis facilis maxime deleniti et cumque sed amet at repellendus corrupti autem quod, quaerat nobis debitis esse aut nulla. Eum laboriosam doloremque, cupiditate sequi error aperiam vel recusandae incidunt minus minima porro eius iusto debitis tempore repellat ut iste eligendi quis maxime natus libero cumque corporis dolorum distinctio. Laboriosam impedit facere, accusamus sunt vitae sint porro at voluptatum ipsam aperiam et sapiente, iusto eos id suscipit sed minus? Officiis rem incidunt vero aliquid officia quod sunt? Nam exercitationem vitae non accusantium quidem, aut aliquam modi sit eveniet blanditiis possimus dolorum repellat nemo ad adipisci. Voluptate nihil mollitia dolore tempora eius repellat totam ipsa porro a? Explicabo quis molestias at?</p>
- 
-</div> */}
+
 
       </div>
 

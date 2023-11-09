@@ -18,7 +18,7 @@ function Navbar(props) {
 
  
         <div class="text-gray-600   ">
-           <div class="w-full mx-auto flex bg-[#699FC9] fixed top-0 left-0 flex-wrap  p-5 flex-col md:flex-row items-center">
+           <div class="w-[100%] overflow-hidden mx-auto flex bg-[#699FC9] fixed top-0 left-0 flex-wrap  p-5 flex-col md:flex-row items-center">
               <a class="flex title-font font-medium items-center text-gray-900 md:mb-0">
                 <button onClick={()=>props.togle()} >
                   <svg

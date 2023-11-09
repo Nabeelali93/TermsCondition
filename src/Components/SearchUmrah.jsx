@@ -57,7 +57,7 @@ function SearchUmrah() {
 <section class=" body-font">
             <div class="container flex  px-5 py-10 mx-auto">
               <div class="flex flex-wrap justify-evenly -m-2">
-                <div class="p-2 h-16 w-60">
+                <div class="p-2 md:h-[60px] md:w-[230px] h-16 w-60">
                   <div class="h-full flex items-center  border p-4 bg-white rounded-lg">
                     <div className="   flex justify-center mr-4 ">
                     <svg width="48" height="37" viewBox="0 0 48 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,14 +76,14 @@ function SearchUmrah() {
 </g>
 </svg>                    </div>
                     <div class="flex-grow">
-                      <h2 class="text-gray-900 text-lg">
+                      <h2 class="text-gray-900 text-[0.995rem]">
                         Date of Travel
                       </h2>
                     </div>
                   </div>
                 </div>
 
-                <div class="p-2 h-16 w-60">
+                <div class="p-2 md:h-[60px] md:w-[230px] h-16 w-60">
                   <div class="h-full flex items-center  border p-4 bg-white rounded-lg">
                     <div className="   flex justify-center mr-4 ">
                     <svg width="48" height="37" viewBox="0 0 48 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,14 +102,14 @@ function SearchUmrah() {
 </g>
 </svg>                     </div>
                     <div class="flex-grow">
-                      <h2 class="text-gray-900 text-lg">
+                      <h2 class="text-gray-900 text-[0.995rem]">
                         Return Date
                       </h2>
                     </div>
                   </div>
                 </div>
 
-                <div class="p-2 h-16 w-60">
+                <div class="p-2 md:h-[60px] md:w-[250px] h-16 w-60">
                   <div class="h-full flex items-center  border p-2 bg-white rounded-lg">
                     <div className="   flex justify-center mr-4 ">
                     <svg width="42" height="32" viewBox="0 0 42 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,22 +119,30 @@ function SearchUmrah() {
 </g>
 </g>
 </svg>                    </div>
-                    <div class="flex-grow text-lg">
+                    <div class="flex-grow text-[0.995rem]">
                       <select required>
                         <option value="" selected disabled>
                           Choose your city
                         </option>
 
-                        <option value="">Empty but valid</option>
-                        <option value="a-value-here">Fully valid</option>
+                        <option value="">Karachi</option>
+                        <option value="a-value-here">Lahore</option>
+                        <option value="a-value-here">Islamabad</option>
+
+                        <option value="a-value-here">Sialkot</option>
+
+                        <option value="a-value-here">Multan</option>
+                        <option value="a-value-here">Peshawar</option>
+
+
                       </select>{" "}
                     </div>
                   </div>
                 </div>
 
-                <div class="p-2 h-16 w-60">
+                <div class="p-2 md:h-[60px] md:w-[250px] h-16 w-60">
                   <div class="h-full flex items-center  border px-3.5 bg-white rounded-lg">
-                    <div className="   flex justify-center mr-4 ">
+                    <div className="   flex justify-center  ">
                     <svg width="57" height="50" viewBox="0 0 57 52" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="city-svgrepo-com (1) 1" clip-path="url(#clip0_1_403)">
 <g id="SVGRepo_iconCarrier">
@@ -152,40 +160,40 @@ function SearchUmrah() {
 </defs>
 </svg>                    </div>
                     <div class="flex-grow">
-                      <h2 class="text-gray-900  text-lg">
+                      <h2 class="text-gray-900  text-[0.995rem]">
                         Total Passengers
                       </h2>
                     </div>
                   </div>
                 </div>
 
-                <div class="p-2 h-16 w-60">
+                <div class="p-2 md:h-[60px] md:w-[229px] h-16 w-60">
                   <div class="h-full flex items-center  border p-2.5 bg-white rounded-lg">
                     <div className="   flex justify-center mr-4 ">
-                      <img className="h-8 w-8" src={mecca} alt="..." />
+                      <img className="h-7 w-7" src={mecca} alt="..." />
                     </div>
                     <div class="flex-grow">
-                      <h2 class="text-gray-900 text-lg">
+                      <h2 class="text-gray-900 text-[0.995rem]">
                         Night in Mecca
                       </h2>
                     </div>
                   </div>
                 </div>
 
-                <div class="p-2 h-16 w-60">
+                <div class="p-2 md:h-[60px] md:w-[229px] h-16 w-60">
                   <div class="h-full flex items-center  border px-2.5 bg-white rounded-lg">
                     <div className="   flex justify-center mr-4 ">
                       <img src={madina} alt="..." />
                     </div>
                     <div class="flex-grow">
-                      <h2 class="text-gray-900 text-lg">
+                      <h2 class="text-gray-900 text-[0.995rem]">
                         Night in Madina
                       </h2>
                     </div>
                   </div>
                 </div>
 
-                <div class="p-2 h-16 w-60">
+                <div class="p-2 md:h-[60px] md:w-[250px]  h-16 w-60">
                   <div class="h-full flex items-center  border p-2.5 bg-white rounded-lg">
                     <div className="   flex justify-center  ">
                     <svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -202,7 +210,7 @@ function SearchUmrah() {
 </g>
 </svg>                    </div>
                     <div class="flex-grow  w-52  h-12 flex justify-between  items-center   text-black  ">
-                      <h2 class="text-gray-900 text-lg">
+                      <h2 class="text-gray-900 text-[0.995rem]">
                         Umrah Visa
                       </h2>
 
@@ -218,13 +226,17 @@ function SearchUmrah() {
                   </div>
                 </div>
 
-                <div class="p-2 h-16 w-60 text-center">
+                <div class="p-2 md:h-[60px] md:w-[240px] h-16 w-60 text-center">
                   <div class="h-full flex   border p-2.5 bg-[#E4F0FF] rounded-lg">
                     <div className="   flex justify-center mr-4 "></div>
                     <div class="flex-grow">
-                      <h2 class="text-[#699FC9] text-lg">
+                      <button>
+
+                      <h2 class="text-[#699FC9] text-[0.995rem]">
                         Continue
                       </h2>
+
+                      </button>
                     </div>
                   </div>
                 </div>
