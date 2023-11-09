@@ -1,19 +1,24 @@
-import React from 'react'
+import React  from 'react'
 
 import Navigation from './Config/Navigation'
-import SearchUmrah from './Components/SearchUmrah'
+import Calendar1 from './Components/Calender'
+
 
 
 function App() {
+
+
   return (
-    <div>
+    <>
       <Navigation/>
+
+
+{/* <Calendar/1/> */}
+
    
-{/* <SearchUmrah/> */}
 
-     
 
-    </div>
+    </>
   )
 }
 

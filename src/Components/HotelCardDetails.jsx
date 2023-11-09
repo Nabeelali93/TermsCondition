@@ -131,24 +131,24 @@ function HotelCardDetails() {
       </div>
 <div className="w-full mt-10">
 
-<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div className="grid grid-cols-2 md:grid-cols-3 gap-4">
     <div>
-        <img class="h-auto max-w-full rounded-lg" src={hotel1} alt=""/>
+        <img className="h-auto max-w-full rounded-lg" src={hotel1} alt=""/>
     </div>
     <div>
-        <img class="h-auto max-w-full rounded-lg" src={hotel1} alt=""/>
+        <img className="h-auto max-w-full rounded-lg" src={hotel1} alt=""/>
     </div>
     <div>
-        <img class="h-auto max-w-full rounded-lg" src={hotel2} alt=""/>
+        <img className="h-auto max-w-full rounded-lg" src={hotel2} alt=""/>
     </div>
     <div>
-        <img class="h-auto max-w-full rounded-lg" src={hotel3} alt=""/>
+        <img className="h-auto max-w-full rounded-lg" src={hotel3} alt=""/>
     </div>
     <div>
-        <img class="h-auto max-w-full rounded-lg" src={hotel4} alt=""/>
+        <img className="h-auto max-w-full rounded-lg" src={hotel4} alt=""/>
     </div>
     <div>
-        <img class="h-auto max-w-full rounded-lg" src={hotel5} alt=""/>
+        <img className="h-auto max-w-full rounded-lg" src={hotel5} alt=""/>
     </div>
    
 </div>

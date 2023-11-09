@@ -5,14 +5,7 @@ import React from 'react'
 import image94 from "../assests/image 94.png"
 import qatar from "../assests/flight/qatar.png"
 
-import booking from "../assests/booking.png";
-import download from "../assests/download.png";
-import help from "../assests/help.png";
-import haram from "../assests/Images/haram.png";
-import masjid from "../assests/Images/masjid.png";
-import world from "../assests/Images/world.png";
-import plus from "../assests/plus.png";
-import minus from "../assests/minus.png";
+
 
 import umrahvisa from "../assests/buttonIcons/umrahvisa.png";
 
@@ -49,41 +42,41 @@ function ManageBooking() {
 
           {/* Button Section Start */}
 
-          <section class=" body-font">
-            <div class="container flex   py-5 mx-auto ">
-              <div class="flex flex-wrap justify-evenly -m-2 ">
-                <div class="p-2 h-16 w-56">
-                  <div class="h-full flex items-center  border p-4 bg-white rounded-lg">
+          <section className=" body-font">
+            <div className="container flex   py-5 mx-auto ">
+              <div className="flex flex-wrap justify-evenly -m-2 ">
+                <div className="p-2 h-16 w-56">
+                  <div className="h-full flex items-center  border p-4 bg-white rounded-lg">
                     <div className="   flex justify-center mr-4 ">
                       <img src={dateoftravel} alt="..." />
                     </div>
-                    <div class="flex-grow">
-                      <h2 class="text-gray-900 title-font font-bold">
+                    <div className="flex-grow">
+                      <h2 className="text-gray-900 title-font font-bold">
                         Date of Travel
                       </h2>
                     </div>
                   </div>
                 </div>
 
-                <div class="p-2 h-16 w-56">
-                  <div class="h-full flex items-center  border p-4 bg-white rounded-lg">
+                <div className="p-2 h-16 w-56">
+                  <div className="h-full flex items-center  border p-4 bg-white rounded-lg">
                     <div className="   flex justify-center mr-4 ">
                       <img src={returndate} alt="..." />
                     </div>
-                    <div class="flex-grow">
-                      <h2 class="text-gray-900 title-font font-bold">
+                    <div className="flex-grow">
+                      <h2 className="text-gray-900 title-font font-bold">
                         Return Date
                       </h2>
                     </div>
                   </div>
                 </div>
 
-                <div class="p-2 h-16 w-56">
-                  <div class="h-full flex items-center  border p-4 bg-white rounded-lg">
+                <div className="p-2 h-16 w-56">
+                  <div className="h-full flex items-center  border p-4 bg-white rounded-lg">
                     <div className="   flex justify-center mr-4 ">
                       <img src={city} alt="..." />
                     </div>
-                    <div class="flex-grow font-bold">
+                    <div className="flex-grow font-bold">
                       <select required>
                         <option value="" selected disabled>
                           Choose your city
@@ -96,52 +89,52 @@ function ManageBooking() {
                   </div>
                 </div>
 
-                <div class="p-2 h-16 w-56">
-                  <div class="h-full flex items-center  border p-2.5 bg-white rounded-lg">
+                <div className="p-2 h-16 w-56">
+                  <div className="h-full flex items-center  border p-2.5 bg-white rounded-lg">
                     <div className="   flex justify-center mr-4 ">
                       <img src={passengers} alt="..." />
                     </div>
-                    <div class="flex-grow">
-                      <h2 class="text-gray-900 title-font font-bold">
+                    <div className="flex-grow">
+                      <h2 className="text-gray-900 title-font font-bold">
                         Total Passengers
                       </h2>
                     </div>
                   </div>
                 </div>
 
-                <div class="p-2 h-16 w-56">
-                  <div class="h-full flex items-center  border p-2.5 bg-white rounded-lg">
+                <div className="p-2 h-16 w-56">
+                  <div className="h-full flex items-center  border p-2.5 bg-white rounded-lg">
                     <div className="   flex justify-center mr-4 ">
                       <img className="h-8 w-8" src={mecca} alt="..." />
                     </div>
-                    <div class="flex-grow">
-                      <h2 class="text-gray-900 title-font font-bold">
+                    <div className="flex-grow">
+                      <h2 className="text-gray-900 title-font font-bold">
                         Night in Mecca
                       </h2>
                     </div>
                   </div>
                 </div>
 
-                <div class="p-2 h-16 w-56">
-                  <div class="h-full flex items-center  border p-2.5 bg-white rounded-lg">
+                <div className="p-2 h-16 w-56">
+                  <div className="h-full flex items-center  border p-2.5 bg-white rounded-lg">
                     <div className="   flex justify-center mr-4 ">
                       <img src={madina} alt="..." />
                     </div>
-                    <div class="flex-grow">
-                      <h2 class="text-gray-900 title-font font-bold">
+                    <div className="flex-grow">
+                      <h2 className="text-gray-900 title-font font-bold">
                         Night in Madina
                       </h2>
                     </div>
                   </div>
                 </div>
 
-                <div class="p-2 h-16 w-56">
-                  <div class="h-full flex items-center  border p-2.5 bg-white rounded-lg">
+                <div className="p-2 h-16 w-56">
+                  <div className="h-full flex items-center  border p-2.5 bg-white rounded-lg">
                     <div className="   flex justify-center  ">
                       <img className="h-8 w-10" src={umrahvisa} alt="..." />
                     </div>
-                    <div class="flex-grow  w-52  h-12 flex justify-between  items-center font-bold   text-black  ">
-                      <h2 class="text-gray-900 title-font font-bold">
+                    <div className="flex-grow  w-52  h-12 flex justify-between  items-center font-bold   text-black  ">
+                      <h2 className="text-gray-900 title-font font-bold">
                         Umrah Visa
                       </h2>
 
@@ -157,11 +150,11 @@ function ManageBooking() {
                   </div>
                 </div>
 
-                <div class="p-2 h-16 w-56 text-center">
-                  <div class="h-full flex   border p-2.5 bg-white rounded-lg">
+                <div className="p-2 h-16 w-56 text-center">
+                  <div className="h-full flex   border p-2.5 bg-white rounded-lg">
                     <div className="   flex justify-center mr-4 "></div>
-                    <div class="flex-grow">
-                      <h2 class="text-gray-900 title-font font-bold">
+                    <div className="flex-grow">
+                      <h2 className="text-gray-900 title-font font-bold">
                         Continue
                       </h2>
                     </div>

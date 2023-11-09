@@ -6,8 +6,8 @@ body{
 
 
 .footer-inp{
-    width: 369px;
-    padding: 11px 117px 10px 14px;
+    outline: none;
+    padding: 11px 20px 10px 14px;
     border-radius: 10px ;
 background: #FFF;
 }

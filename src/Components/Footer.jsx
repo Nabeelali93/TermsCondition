@@ -6,11 +6,11 @@ function Footer() {
   
   return (
    <>
-   <footer class="w-full mt-5 ">
+   <footer className="w-full mt-5 ">
 
 <div className='bg-black w-full p-11  grid grid-cols-1 md:grid-cols-2  gap-2 '>
 <div className='w-full'>
-<h1 className='text-white text-xl font-bold'>Subscribe to our newsletter </h1>
+<h1 className='text-white text-xl '>Subscribe to our newsletter </h1>
 <p className='text-white '>Stay up to date with the latest news, announcements and articles.</p>
 
 </div>
@@ -22,102 +22,66 @@ function Footer() {
 
 
 
-  <div class="w-full bg-[#3C3C3C] ">
+  <div className="w-full bg-[#3C3C3C] ">
    
-  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-    <div class="md:w-64 flex-shrink-0 md:mr-0 mr-auto md:text-left md:mt-0 mt-10">
-  
-        <span class="ml-3 text-lg md:text-left text-center  text-[#699fc9]">Get The App</span>
-   
-        <div className="justify-center items-center border self-stretch flex w-full grow flex-col mt-7 pl-8 pr-8 py-4 rounded-xl border-solid border-white max-md:px-5">
-              <div className="items-start  flex justify-between gap-4">
-                <img
-                  loading="lazy"
-                  src={apple}
-                  className="aspect-[0.95] object-contain object-center w-9 overflow-hidden self-center max-w-full my-auto"
-                />
-                <div className="items-start self-stretch flex flex-col">
-                  <div className="self-stretch text-white text-opacity-80 text-xs font-medium">
-                  Download on the                  </div>
-                  <div className="text-white text-xl font-semibold self-stretch whitespace-nowrap">
-                  Apple Store                  </div>
-                </div>
-              </div>
-              </div>
+  <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+   {/* <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left  order-first"> */}
 
-   <div className="justify-center items-center border self-stretch flex w-full grow flex-col mt-7 pl-8 pr-8 py-4 rounded-xl border-solid border-white max-md:px-5">
-              <div className="items-start  flex justify-between gap-4">
-                <img
-                  loading="lazy"
-                  src={palystore}
-                  className="aspect-[0.95] object-contain object-center w-9 overflow-hidden self-center max-w-full my-auto"
-                />
-                <div className="items-start self-stretch flex flex-col">
-                  <div className="self-stretch text-white text-opacity-80 text-xs font-medium">
-                    Get it on
-                  </div>
-                  <div className="text-white text-xl font-semibold self-stretch whitespace-nowrap">
-                    Google Play
-                  </div>
-                </div>
-              </div>
-              </div>
-    </div>
-    <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left  order-first">
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-white tracking-widest text-lg mb-3">Services</h2>
-        <nav class="list-none mb-10 ">
+    <div className="flex-grow flex flex-wrap  -mb-10 md:text-left  order-first">
+      <div className="lg:w-1/5 md:w-1/3 w-full md:px-0 lg:px-0 px-3 ">
+        <h2 className="title-font font-medium text-white tracking-widest text-lg mb-3">Services</h2>
+        <ul className="list-none mb-10 ">
           <li className='my-3'>
-            <a class="text-[#c1c1c1]">Umrah package</a>
+            <a className="text-[#c1c1c1]">Umrah package</a>
           </li>
           <li className='my-3'>
-            <a class="text-[#c1c1c1]">Flight</a>
+            <a className="text-[#c1c1c1]">Flight</a>
           </li>
           <li className='my-3'>
-            <a class="text-[#c1c1c1]">Get Hotel</a>
+            <a className="text-[#c1c1c1]">Get Hotel</a>
           </li>
           <li className='my-3'>
-            <a class="text-[#c1c1c1]">Get Insurance</a>
+            <a className="text-[#c1c1c1]">Get Insurance</a>
           </li>
           <li className='my-3'>
-            <a class="text-[#c1c1c1]">Deals</a>
+            <a className="text-[#c1c1c1]">Deals</a>
           </li>
           <li className='my-3'>
-            <a class="text-[#c1c1c1]">Get Visa</a>
+            <a className="text-[#c1c1c1]">Get Visa</a>
           </li>
           <li className='my-3'>
-            <a class="text-[#c1c1c1]">Trip</a>
+            <a className="text-[#c1c1c1]">Trip</a>
           </li>
-        </nav>
+        </ul>
       </div>
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-white tracking-widest text-lg mb-3">Contact Us</h2>
-        <nav class="list-none mb-10">
+      <div className="lg:w-1/5 md:w-1/3 w-full  md:px-0 lg:px-0 px-3 ">
+        <h2 className="title-font font-medium text-white tracking-widest text-lg mb-3">Contact Us</h2>
+        <ul className="list-none mb-10">
           <li className='my-3'> 
           <svg className='inline-flex' xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-  <path d="M14.6667 4.00008C14.6667 3.26675 14.0667 2.66675 13.3334 2.66675H2.66671C1.93337 2.66675 1.33337 3.26675 1.33337 4.00008V12.0001C1.33337 12.7334 1.93337 13.3334 2.66671 13.3334H13.3334C14.0667 13.3334 14.6667 12.7334 14.6667 12.0001V4.00008ZM13.3334 4.00008L8.00004 7.33341L2.66671 4.00008H13.3334ZM13.3334 12.0001H2.66671V5.33341L8.00004 8.66675L13.3334 5.33341V12.0001Z" fill="white" fill-opacity="0.67"/>
-</svg>            <a class="text-[#c1c1c1] mx-1">Simple@gmail.com</a>
+  <path d="M14.6667 4.00008C14.6667 3.26675 14.0667 2.66675 13.3334 2.66675H2.66671C1.93337 2.66675 1.33337 3.26675 1.33337 4.00008V12.0001C1.33337 12.7334 1.93337 13.3334 2.66671 13.3334H13.3334C14.0667 13.3334 14.6667 12.7334 14.6667 12.0001V4.00008ZM13.3334 4.00008L8.00004 7.33341L2.66671 4.00008H13.3334ZM13.3334 12.0001H2.66671V5.33341L8.00004 8.66675L13.3334 5.33341V12.0001Z" fill="white" fillOpacity="0.67"/>
+</svg>            <a className="text-[#c1c1c1] mx-1">Saer@gmail.com</a>
           </li>
           <li className='my-3'>
           <svg className='inline-flex' xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-  <path d="M13.34 10.2533C12.52 10.2533 11.7267 10.12 10.9867 9.88C10.8707 9.8407 10.7461 9.83487 10.627 9.86317C10.5079 9.89147 10.3992 9.95275 10.3133 10.04L9.26667 11.3533C7.38 10.4533 5.61333 8.75333 4.67333 6.8L5.97333 5.69333C6.15333 5.50667 6.20667 5.24667 6.13333 5.01333C5.88667 4.27333 5.76 3.48 5.76 2.66C5.76 2.3 5.46 2 5.1 2H2.79333C2.43333 2 2 2.16 2 2.66C2 8.85333 7.15333 14 13.34 14C13.8133 14 14 13.58 14 13.2133V10.9133C14 10.5533 13.7 10.2533 13.34 10.2533Z" fill="white" fill-opacity="0.51"/>
+  <path d="M13.34 10.2533C12.52 10.2533 11.7267 10.12 10.9867 9.88C10.8707 9.8407 10.7461 9.83487 10.627 9.86317C10.5079 9.89147 10.3992 9.95275 10.3133 10.04L9.26667 11.3533C7.38 10.4533 5.61333 8.75333 4.67333 6.8L5.97333 5.69333C6.15333 5.50667 6.20667 5.24667 6.13333 5.01333C5.88667 4.27333 5.76 3.48 5.76 2.66C5.76 2.3 5.46 2 5.1 2H2.79333C2.43333 2 2 2.16 2 2.66C2 8.85333 7.15333 14 13.34 14C13.8133 14 14 13.58 14 13.2133V10.9133C14 10.5533 13.7 10.2533 13.34 10.2533Z" fill="white" fillOpacity="0.51"/>
 </svg>
-            <a class="text-[#c1c1c1]  mx-1 ">  +92-123456789 <br /> </a>
+            <a className="text-[#c1c1c1]  mx-1 ">  +92-123456789 <br /> </a>
           </li>
           
           <li className='my-3'>
           <svg className='inline-flex' xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-  <path d="M8.00004 1.33325C5.42004 1.33325 3.33337 3.41992 3.33337 5.99992C3.33337 9.49992 8.00004 14.6666 8.00004 14.6666C8.00004 14.6666 12.6667 9.49992 12.6667 5.99992C12.6667 3.41992 10.58 1.33325 8.00004 1.33325ZM4.66671 5.99992C4.66671 4.15992 6.16004 2.66659 8.00004 2.66659C9.84004 2.66659 11.3334 4.15992 11.3334 5.99992C11.3334 7.91992 9.41337 10.7933 8.00004 12.5866C6.61337 10.8066 4.66671 7.89992 4.66671 5.99992Z" fill="white" fill-opacity="0.44"/>
-  <path d="M8.00004 7.66658C8.92052 7.66658 9.66671 6.92039 9.66671 5.99992C9.66671 5.07944 8.92052 4.33325 8.00004 4.33325C7.07957 4.33325 6.33337 5.07944 6.33337 5.99992C6.33337 6.92039 7.07957 7.66658 8.00004 7.66658Z" fill="white" fill-opacity="0.44"/>
+  <path d="M8.00004 1.33325C5.42004 1.33325 3.33337 3.41992 3.33337 5.99992C3.33337 9.49992 8.00004 14.6666 8.00004 14.6666C8.00004 14.6666 12.6667 9.49992 12.6667 5.99992C12.6667 3.41992 10.58 1.33325 8.00004 1.33325ZM4.66671 5.99992C4.66671 4.15992 6.16004 2.66659 8.00004 2.66659C9.84004 2.66659 11.3334 4.15992 11.3334 5.99992C11.3334 7.91992 9.41337 10.7933 8.00004 12.5866C6.61337 10.8066 4.66671 7.89992 4.66671 5.99992Z" fill="white" fillOpacity="0.44"/>
+  <path d="M8.00004 7.66658C8.92052 7.66658 9.66671 6.92039 9.66671 5.99992C9.66671 5.07944 8.92052 4.33325 8.00004 4.33325C7.07957 4.33325 6.33337 5.07944 6.33337 5.99992C6.33337 6.92039 7.07957 7.66658 8.00004 7.66658Z" fill="white" fillOpacity="0.44"/>
 </svg>
-            <a class="text-[#c1c1c1] mx-1">Phone : 23456783452</a>
+            <a className="text-[#c1c1c1] mx-1">Phone : 03103889147</a>
           </li>
           <li className='my-3'>
           <svg className='inline-flex' xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 14 14" fill="none">
-  <g clip-path="url(#clip0_1_286)">
-    <path d="M6.99996 12.8334C10.2216 12.8334 12.8333 10.2217 12.8333 7.00008C12.8333 3.77842 10.2216 1.16675 6.99996 1.16675C3.7783 1.16675 1.16663 3.77842 1.16663 7.00008C1.16663 10.2217 3.7783 12.8334 6.99996 12.8334Z" stroke="white" stroke-opacity="0.58" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M1.16663 7H12.8333" stroke="white" stroke-opacity="0.58" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M6.99996 1.16675C8.45904 2.76412 9.28823 4.8371 9.33329 7.00008C9.28823 9.16306 8.45904 11.236 6.99996 12.8334C5.54088 11.236 4.71169 9.16306 4.66663 7.00008C4.71169 4.8371 5.54088 2.76412 6.99996 1.16675Z" stroke="white" stroke-opacity="0.58" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g clipPath="url(#clip0_1_286)">
+    <path d="M6.99996 12.8334C10.2216 12.8334 12.8333 10.2217 12.8333 7.00008C12.8333 3.77842 10.2216 1.16675 6.99996 1.16675C3.7783 1.16675 1.16663 3.77842 1.16663 7.00008C1.16663 10.2217 3.7783 12.8334 6.99996 12.8334Z" stroke="white" strokeOpacity="0.58" strokeWidth="1.3" strokeLinecap="round" stroke-linejoin="round"/>
+    <path d="M1.16663 7H12.8333" stroke="white" strokeOpacity="0.58" strokeWidth="1.3" strokeLinecap="round" stroke-linejoin="round"/>
+    <path d="M6.99996 1.16675C8.45904 2.76412 9.28823 4.8371 9.33329 7.00008C9.28823 9.16306 8.45904 11.236 6.99996 12.8334C5.54088 11.236 4.71169 9.16306 4.66663 7.00008C4.71169 4.8371 5.54088 2.76412 6.99996 1.16675Z" stroke="white" strokeOpacity="0.58" strokeWidth="1.3" strokeLinecap="round" stroke-linejoin="round"/>
   </g>
   <defs>
     <clipPath id="clip0_1_286">
@@ -125,36 +89,36 @@ function Footer() {
     </clipPath>
   </defs>
 </svg>
-            <a class="text-[#c1c1c1] mx-1">Yourwebsite.com </a>
+            <a className="text-[#c1c1c1] mx-1">Yourwebsite.com </a>
           </li>
-        </nav>
+        </ul>
       </div>
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-white tracking-widest text-lg mb-3">Company</h2>
-        <nav class="list-none mb-10">
+      <div className="lg:w-1/5 md:w-1/3 w-full  md:px-0 lg:px-0 px-3 ">
+        <h2 className="title-font font-medium text-white tracking-widest text-lg mb-3">Company</h2>
+        <ul className="list-none mb-10 ">
           <li className='my-3'>
-            <a class="text-[#c1c1c1]">About Us</a>
+            <a className="text-[#c1c1c1]">About Us</a>
           </li>
           <li className='my-3'>
-            <a class="text-[#c1c1c1]">FAQ</a>
+            <a className="text-[#c1c1c1]">FAQ</a>
           </li>
           <li className='my-3'>
-            <a class="text-[#c1c1c1]">Privacy policy</a>
+            <a className="text-[#c1c1c1]">Privacy policy</a>
           </li>
           <li className='my-3'>
-            <a class="text-[#c1c1c1]">Term of use</a>
+            <a className="text-[#c1c1c1]">Term of use</a>
           </li>
           <li className='my-3'>
-            <a class="text-[#c1c1c1]">Blogs</a>
+            <a className="text-[#c1c1c1]">Blogs</a>
           </li>
-        </nav>
+        </ul>
       </div>
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-white tracking-widest text-lg mb-3">Social links</h2>
-        <nav class="list-none flex my-8 gap-3 ">
+      <div className="lg:w-1/5 md:w-1/3 w-full  md:px-0 lg:px-0 px-3">
+        <h2 className="title-font font-medium text-white tracking-widest text-lg mb-3">Social links</h2>
+        <ul className="list-none flex my-8 gap-3 ">
         <li>
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 22 22" fill="none">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0 11.0614C0 16.5303 3.97192 21.0778 9.16667 22V14.0553H6.41667V11H9.16667V8.55525C9.16667 5.80525 10.9386 4.27808 13.4447 4.27808C14.2386 4.27808 15.0947 4.4 15.8886 4.52192V7.33333H14.4833C13.1386 7.33333 12.8333 8.00525 12.8333 8.86142V11H15.7667L15.2781 14.0553H12.8333V22C18.0281 21.0778 22 16.5312 22 11.0614C22 4.9775 17.05 0 11 0C4.95 0 0 4.9775 0 11.0614Z" fill="white"/>
+<path fillRule="evenodd" clipRule="evenodd" d="M0 11.0614C0 16.5303 3.97192 21.0778 9.16667 22V14.0553H6.41667V11H9.16667V8.55525C9.16667 5.80525 10.9386 4.27808 13.4447 4.27808C14.2386 4.27808 15.0947 4.4 15.8886 4.52192V7.33333H14.4833C13.1386 7.33333 12.8333 8.00525 12.8333 8.86142V11H15.7667L15.2781 14.0553H12.8333V22C18.0281 21.0778 22 16.5312 22 11.0614C22 4.9775 17.05 0 11 0C4.95 0 0 4.9775 0 11.0614Z" fill="white"/>
 </svg>          </li>
           <li>
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 22 22" fill="none">
@@ -162,7 +126,7 @@ function Footer() {
 </svg>          </li>
           <li>
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 22 22" fill="none">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.7206e-07 1.838C2.7206e-07 1.35053 0.193646 0.883032 0.538338 0.53834C0.88303 0.193648 1.35053 2.45031e-06 1.838 2.45031e-06H20.16C20.4016 -0.000392101 20.6409 0.0468654 20.8641 0.139069C21.0874 0.231273 21.2903 0.366612 21.4612 0.537339C21.6322 0.708065 21.7677 0.910826 21.8602 1.13401C21.9526 1.3572 22.0001 1.59643 22 1.838V20.16C22.0003 20.4016 21.9529 20.6409 21.8606 20.8642C21.7683 21.0875 21.6328 21.2904 21.462 21.4613C21.2912 21.6322 21.0884 21.7678 20.8651 21.8602C20.6419 21.9526 20.4026 22.0001 20.161 22H1.838C1.59655 22 1.35746 21.9524 1.1344 21.86C0.911335 21.7676 0.708671 21.6321 0.537984 21.4613C0.367297 21.2905 0.231932 21.0878 0.139623 20.8647C0.0473133 20.6416 -0.000131096 20.4025 2.7206e-07 20.161V1.838ZM8.708 8.388H11.687V9.884C12.117 9.024 13.217 8.25 14.87 8.25C18.039 8.25 18.79 9.963 18.79 13.106V18.928H15.583V13.822C15.583 12.032 15.153 11.022 14.061 11.022C12.546 11.022 11.916 12.111 11.916 13.822V18.928H8.708V8.388ZM3.208 18.791H6.416V8.25H3.208V18.79V18.791ZM6.875 4.812C6.88105 5.08667 6.83217 5.35979 6.73124 5.61532C6.63031 5.87084 6.47935 6.10364 6.28723 6.30003C6.09511 6.49643 5.8657 6.65247 5.61245 6.75901C5.35921 6.86554 5.08724 6.92042 4.8125 6.92042C4.53776 6.92042 4.26579 6.86554 4.01255 6.75901C3.7593 6.65247 3.52989 6.49643 3.33777 6.30003C3.14565 6.10364 2.99469 5.87084 2.89376 5.61532C2.79283 5.35979 2.74395 5.08667 2.75 4.812C2.76187 4.27286 2.98439 3.75979 3.36989 3.38269C3.75539 3.00558 4.27322 2.79442 4.8125 2.79442C5.35178 2.79442 5.86961 3.00558 6.25511 3.38269C6.64061 3.75979 6.86313 4.27286 6.875 4.812Z" fill="white"/>
+  <path fillRule="evenodd" clipRule="evenodd" d="M2.7206e-07 1.838C2.7206e-07 1.35053 0.193646 0.883032 0.538338 0.53834C0.88303 0.193648 1.35053 2.45031e-06 1.838 2.45031e-06H20.16C20.4016 -0.000392101 20.6409 0.0468654 20.8641 0.139069C21.0874 0.231273 21.2903 0.366612 21.4612 0.537339C21.6322 0.708065 21.7677 0.910826 21.8602 1.13401C21.9526 1.3572 22.0001 1.59643 22 1.838V20.16C22.0003 20.4016 21.9529 20.6409 21.8606 20.8642C21.7683 21.0875 21.6328 21.2904 21.462 21.4613C21.2912 21.6322 21.0884 21.7678 20.8651 21.8602C20.6419 21.9526 20.4026 22.0001 20.161 22H1.838C1.59655 22 1.35746 21.9524 1.1344 21.86C0.911335 21.7676 0.708671 21.6321 0.537984 21.4613C0.367297 21.2905 0.231932 21.0878 0.139623 20.8647C0.0473133 20.6416 -0.000131096 20.4025 2.7206e-07 20.161V1.838ZM8.708 8.388H11.687V9.884C12.117 9.024 13.217 8.25 14.87 8.25C18.039 8.25 18.79 9.963 18.79 13.106V18.928H15.583V13.822C15.583 12.032 15.153 11.022 14.061 11.022C12.546 11.022 11.916 12.111 11.916 13.822V18.928H8.708V8.388ZM3.208 18.791H6.416V8.25H3.208V18.79V18.791ZM6.875 4.812C6.88105 5.08667 6.83217 5.35979 6.73124 5.61532C6.63031 5.87084 6.47935 6.10364 6.28723 6.30003C6.09511 6.49643 5.8657 6.65247 5.61245 6.75901C5.35921 6.86554 5.08724 6.92042 4.8125 6.92042C4.53776 6.92042 4.26579 6.86554 4.01255 6.75901C3.7593 6.65247 3.52989 6.49643 3.33777 6.30003C3.14565 6.10364 2.99469 5.87084 2.89376 5.61532C2.79283 5.35979 2.74395 5.08667 2.75 4.812C2.76187 4.27286 2.98439 3.75979 3.36989 3.38269C3.75539 3.00558 4.27322 2.79442 4.8125 2.79442C5.35178 2.79442 5.86961 3.00558 6.25511 3.38269C6.64061 3.75979 6.86313 4.27286 6.875 4.812Z" fill="white"/>
 </svg>          </li>
           <li>
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  viewBox="0 0 22 22" fill="none">
@@ -171,8 +135,46 @@ function Footer() {
 </svg>          </li>
        
         
-        </nav>
+        </ul>
       </div>
+      <div className="lg:w-1/5 md:w-1/3 w-full  md:px-0 lg:px-0 px-3  flex-shrink-0 md:mr-0 mr-auto md:text-left md:mt-0 ">
+  
+  <span className="ml-3 text-lg md:text-left text-center  text-[#699fc9]">Get The App</span>
+
+  <div className="justify-center items-center border self-stretch flex  grow flex-col mt-7 pl-2 pr-2 py-4 rounded-xl md:w-full lg:w-full w-[250px] border-solid border-white max-md:px-5">
+        <div className="items-start flex-wrap flex justify-between gap-2">
+          <img
+            loading="lazy"
+            src={apple}
+            className="aspect-[0.95] object-contain object-center w-9 self-center max-w-full my-auto"
+          />
+          <div className="items-start self-stretch flex flex-col">
+            <div className="self-stretch text-white text-opacity-80 text-xs font-medium">
+            Download on the                  </div>
+            <div className="text-white text-lg font-semibold self-stretch whitespace-nowrap">
+            Apple Store                  </div>
+          </div>
+        </div>
+        </div>
+
+<div className="justify-center items-center border self-stretch flex  grow flex-col mt-7 pl-2 pr-2 py-4 rounded-xl border-solid md:w-full lg:w-full w-[250px] border-white max-md:px-5">
+        <div className="items-start  flex justify-between gap-2">
+          <img
+            loading="lazy"
+            src={palystore}
+            className="aspect-[0.95] object-contain object-center w-9  self-center max-w-full my-auto"
+          />
+          <div className="items-start self-stretch flex flex-col">
+            <div className="self-stretch text-white text-opacity-80 text-xs font-medium">
+              Get it on
+            </div>
+            <div className="text-white text-lg font-semibold self-stretch whitespace-nowrap">
+              Google Play
+            </div>
+          </div>
+        </div>
+        </div>
+</div>
     </div>
   </div>
  

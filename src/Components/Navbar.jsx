@@ -17,9 +17,9 @@ function Navbar(props) {
         {/* Navbar Start */}
 
  
-        <div class="text-gray-600   ">
-           <div class="w-[100%] overflow-hidden mx-auto flex bg-[#699FC9] fixed top-0 left-0 flex-wrap  p-5 flex-col md:flex-row items-center">
-              <a class="flex title-font font-medium items-center text-gray-900 md:mb-0">
+        <div className="text-gray-600   ">
+           <div className="w-[100%] overflow-hidden mx-auto flex bg-[#699FC9] fixed top-0 left-0 flex-wrap  p-5 flex-col md:flex-row items-center">
+              <a className="flex title-font font-medium items-center text-gray-900 md:mb-0">
                 <button onClick={()=>props.togle()} >
                   <svg
                     width="27"
@@ -37,14 +37,14 @@ function Navbar(props) {
 <Link to="/">
                 <span
                   id="logo"
-                  class="ml-3 px-3 text-2xl font-bold text-white mb-1  cursor-pointer"
+                  className="ml-3 px-3 text-2xl font-bold text-white mb-1  cursor-pointer"
                  
                 >
                   Saer.<span className="text-sm">pk</span>
                 </span>
                 </Link>
               </a>
-              <nav class="md:ml-auto md:mr-auto flex flex-wrap  items-center text-base ">
+              <nav className="md:ml-auto md:mr-auto flex flex-wrap  items-center text-base ">
                 <div className="rounded-md border-white border bg-[#699FC9] flex items-center  px-3">
                   <svg
                     width="20"
@@ -83,10 +83,10 @@ function Navbar(props) {
                     <circle cx="21" cy="9" r="4" fill="#B00404" />
                   </svg>
                 </button>
-                <button class="inline-flex items-center border-0 py-1 px-5 md:px-7 focus:outline-none text-gray-200  text-base mt-4 md:mt-0">
+                <button className="inline-flex items-center border-0 py-1 px-5 md:px-7 focus:outline-none text-gray-200  text-base mt-4 md:mt-0">
                   Login
                 </button>
-                <button class="inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none text-[#699FC9] hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+                <button className="inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none text-[#699FC9] hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
                   Sign Up
                 </button>
               </div>
