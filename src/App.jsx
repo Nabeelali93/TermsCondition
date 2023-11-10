@@ -1,8 +1,6 @@
-import React  from 'react'
-
+import React from 'react'
 import Navigation from './Config/Navigation'
 import Calendar1 from './Components/Calender'
-
 
 
 function App() {
@@ -15,7 +13,7 @@ function App() {
 
 {/* <Calendar/1/> */}
 
-   
+
 
 
     </>
